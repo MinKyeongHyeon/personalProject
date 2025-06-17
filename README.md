@@ -14,8 +14,9 @@
 
 ## ☎️ 연락처
 
-    기타 궁금한 사항은 다음 메일로 연락해주세요.
-    -manemin2@gmail.com
+기타 궁금한 사항은 다음 메일로 연락해주세요.
+
+- manemin2@gmail.com
 
 - 블로그 구경하기
   <https://velog.io/@tedmin93/posts>
