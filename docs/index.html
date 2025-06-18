@@ -14,19 +14,56 @@
         font-weight: normal;
         font-style: normal;
       }
-      @font-face {
-        font-family: "GmarketSansMedium";
-        src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff")
-          format("woff");
-        font-weight: normal;
+      /* @font-face {
+        font-family: "GmarketSans";
+        src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff2")
+            format("woff2"),
+          url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff")
+            format("woff");
+        font-weight: 300;
         font-style: normal;
+        font-display: swap;
       }
-      @import url("//fonts.googleapis.com/earlyaccess/notosanskr.css");
+
+      @font-face {
+        font-family: "GmarketSans";
+        src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff2")
+            format("woff2"),
+          url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff")
+            format("woff");
+        font-weight: 500;
+        font-style: normal;
+        font-display: swap;
+      }
+      @font-face {
+        font-family: "GmarketSans";
+        src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff2")
+            format("woff2"),
+          url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff")
+            format("woff");
+        font-weight: 700;
+        font-style: normal;
+        font-display: swap;
+      } */
+
+      @import "tailwindcss";
       body {
         background-color: #5b2386;
         color: white;
       }
     </style>
+    <link
+      rel="stylesheet"
+      as="style"
+      crossorigin
+      href="https://cdn.jsdelivr.net/gh/ungveloper/web-fonts/GmarketSans/font-face.css"
+    />
+    <link
+      rel="stylesheet"
+      as="style"
+      crossorigin
+      href="https://cdn.jsdelivr.net/gh/ungveloper/web-fonts/GmarketSans/font-family.css"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
@@ -37,51 +74,134 @@
         alt="1만 시간의 법칙"
       />
     </h1>
+
     <q
-      class="block text-center mt-8 font-[OTEnjoystoriesBA] text-[#f5df4d] px-[32px] sm:px-0 text-[min(22px)] sm:text-[36px]"
+      class="block mt-8 text-center font-['OTEnjoystoriesBA'] text-[#f5df4d] px-[32px] sm:px-0 text-[min(22px)] sm:text-[36px]"
     >
       “연습은 어제의 당신보다 당신을 더 낫게 만든다.”
     </q>
-    <blockquote>
-      <dfn>1만 시간의 법칙</dfn>은 어떤 분야의 전문가가 되기 위해서는 최소한 1만
-      시간의 훈련이 필요하다는 법칙이다.
-    </blockquote>
-    <section>
-      <div>
+
+    <div
+      class="mt-[80px] flex items-center m-auto w-[calc(100vw-30px)] sm:w-[485px]"
+    >
+      <img
+        class="w-5 sm:w-9"
+        src="./images/leftDoubleQuote.svg"
+        alt="doubleQuote"
+      />
+      <blockquote
+        class="w-[90%] font-['GmarketSans'] font-[500] text-center text-[14px] sm:text-[18px]"
+      >
+        <dfn class="font-bold text-[14px] sm:text-[24px]">1만 시간의 법칙</dfn
+        >은 <br />
+        어떤 분야의 전문가가 되기 위해서는 <br />
+        최소한 1만 시간의 훈련이 필요하다는 법칙이다.
+      </blockquote>
+      <img
+        class="w-5 sm:w-9"
+        src="./images/rightDoubleQoute.svg"
+        alt="doubleQoute"
+      />
+    </div>
+
+    <section
+      class="mt-[80px] sm:mt-[100px] mx-auto w-[calc(100vw-40px)] font-['GmarketSans'] font-[500] leading-[250%] text-center text-[14px] sm:text-[24px]"
+    >
+      <p>
         나는
-        <input type="text" />
+        <input
+          class="w-[156px] sm:w-[228px] px-[40px] rounded-[8px] gap-[10px] text-center text-[14px] sm:text-[24px]"
+          type="text"
+          placeholder="예&#41;프로그래밍"
+        />
         전문가가 될 것이다.
-      </div>
-      <div>
-        그래서 앞으로 매일 하루에
-        <input type="text" />
+      </p>
+      <p>그래서 앞으로 매일 하루에</p>
+      <p>
+        <input
+          class="w-[156px] sm:w-[228px] px-[40px] rounded-[8px] gap-[10px] text-center text-[14px] sm:text-[24px]"
+          type="text"
+          placeholder="예&#41;5시간"
+        />
         시간씩 훈련할 것이다.
+      </p>
+    </section>
+    <section class="mt-[80px] flex justify-center">
+      <button
+        class="relative w-[240px] sm:w-[567px] px-[50px] py-[20px] rounded-[12px] bg-[#fcee21] text-[#5b2386] text-center text-[14px] sm:text-[24px] leading-[120%] font-['GmarketSans'] font-[700] shadow-[2px_4px_10px_rgba(0,0,0,0.15)]"
+      >
+        나는 며칠 동안 훈련을 해야 1만 시간이 될까?
+        <img
+          class="absolute w-[43px] sm:w-[64px] top-[40px] sm:top-[14px] left-[244px] sm:left-[571px]"
+          src="./images/icon.png"
+          alt="손가락아이콘"
+        />
+      </button>
+    </section>
+    <section
+      class="mt-[68px] sm:mt-[182px] text-[12px] flex flex-col items-center"
+    >
+      <div
+        class="flex items-center justify-center gap-[12px] w-[286px] sm:w-[663px] sm:text-[24px] font-['GmarketSans'] font-[500]"
+      >
+        <p>당신은</p>
+        <strong class="text-[24px] sm:text-[72px]">프로그래밍</strong>
+        <p>전문가가 되기 위해서</p>
       </div>
-      <div></div>
-    </section>
-    <section>
-      <button>나는 며칠 동안 훈련을 해야 1만 시간이 될까?</button>
-      <img src="./images/icon.png" alt="손가락아이콘" />
-    </section>
-    <section>
-      <p>당신은 <strong>프로그래밍</strong> 전문가가 되기 위해서</p>
-      <p>대략 <strong>5110</strong> 일 이상 훈련하셔야 합니다! :&#41;</p>
-    </section>
-    <section>
-      <button>훈련하러 가기 GO! GO!</button>
-      <div>
-        <strong>화이팅!!</strong>
-        <p>당신의 꿈을 응원합니다!</p>
-        <img src="./images/licat.png" alt="라이캣" />
-        <button>종료하고 진짜 훈련하러 가기 GO!GO!</button>
+      <div
+        class="flex items-center justify-center gap-[12px] w-[286px] sm:w-[663px] sm:text-[24px] font-['GmarketSans'] font-[500]"
+      >
+        <p>대략</p>
+        <strong class="text-[24px] sm:text-[72px]">5110</strong>
+        <p>일 이상 훈련하셔야 합니다! :&#41;</p>
       </div>
-      <button>공유하기</button>
     </section>
-    <footer>
-      <img src="" alt="" />
-      <cite>
-        <img src="./images/logo-m.png" alt="위니브로고" />
+    <section class="mt-[52px] flex justify-center gap-[8px] sm:gap-[10px]">
+      <button
+        class="rounded-[12px] px-[24px] sm:px-[50px] py-[16px] sm:py-[20px] bg-[#fcee21] text-[#5b2386] text-[14px] sm:text-[24px] font-[GmarketSans] font-bold shadow-[2px_4px_10px_rgba(0,0,0,0.15)]"
+      >
+        훈련하러 가기 GO! GO!
+      </button>
+      <button
+        class="rounded-[12px] px-[24px] sm:px-[50px] py-[16px] sm:py-[20px] bg-white text-[#5b2386] text-[14px] sm:text-[24px] font-[GmarketSans] font-bold shadow-[2px_4px_10px_rgba(0,0,0,0.15)]"
+      >
+        공유하기
+      </button>
+    </section>
+    <div
+      class="hidden w-[330px] sm:w-[800px] h-[500px] sm:h-[816px] px-[42px] sm:px-[146px] py-[40px] sm:py-[80px] rounded-[20px] bg-white text-center"
+    >
+      <strong
+        class="text-[#5b2386] text-[64px] sm:text-[96px] font-[OTEnjoystoriesBA] leading-none"
+        >화이팅!!</strong
+      >
+      <p
+        class="text-[#5b2386] text-[36px] sm:text-[36px] font-[OTEnjoystoriesBA] leading-none"
+      >
+        당신의 꿈을 응원합니다!
+      </p>
+      <img
+        class="mt-[24px] sm:mt-[40px] w-[240px] sm:w-[483px]"
+        src="./images/licat.png"
+        alt="라이캣"
+      />
+      <button
+        class="mt-[24px] sm:mt-[60px] w-full px-[50px] py-[20px] rounded-[12px] bg-[#fcee21] text-[#5b2386] text-center text-[14px] sm:text-[24px] font-[GmarketSans] font-bold leading-none"
+      >
+        종료하고 진짜 훈련하러 가기 GO!GO!
+      </button>
+    </div>
+    <footer class="flex flex-col justify-center items-center text-center">
+      <cite
+        class="mt-[60px] mb-[48px] sm:mb-[128px] sm:mt-[120px] text-[9px] sm:text-[12px] font-[NotoSans]"
+      >
+        <img
+          class="box w-[125px] sm:w-[168px] mx-auto mb-[12px] sm:mb-[20px]"
+          src="./images/logo-m.png"
+          alt="위니브로고"
+        />
         본 서비스 내 이미지 및 콘텐츠의 저작권은 주식회사 위니브에 있습니다.
+        <br />
         수정 및 재배포, 무단 도용 시 법적인 문제가 발생할 수 있습니다.
       </cite>
     </footer>
