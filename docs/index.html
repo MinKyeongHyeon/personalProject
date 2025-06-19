@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ko-KR">
   <head>
     <meta charset="UTF-8" />
@@ -8,45 +8,12 @@
     <link rel="stylesheet" href="./CSS/reset.css" />
     <style>
       @font-face {
-        font-family: "OTEnjoystoriesBA";
-        src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/OTEnjoystoriesBA.woff")
-          format("woff");
+        font-family: 'OTEnjoystoriesBA';
+        src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/OTEnjoystoriesBA.woff')
+          format('woff');
         font-weight: normal;
         font-style: normal;
       }
-      /* @font-face {
-        font-family: "GmarketSans";
-        src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff2")
-            format("woff2"),
-          url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff")
-            format("woff");
-        font-weight: 300;
-        font-style: normal;
-        font-display: swap;
-      }
-
-      @font-face {
-        font-family: "GmarketSans";
-        src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff2")
-            format("woff2"),
-          url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff")
-            format("woff");
-        font-weight: 500;
-        font-style: normal;
-        font-display: swap;
-      }
-      @font-face {
-        font-family: "GmarketSans";
-        src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff2")
-            format("woff2"),
-          url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff")
-            format("woff");
-        font-weight: 700;
-        font-style: normal;
-        font-display: swap;
-      } */
-
-      @import "tailwindcss";
       body {
         background-color: #5b2386;
         color: white;
@@ -54,35 +21,33 @@
     </style>
     <link
       rel="stylesheet"
-      as="style"
       crossorigin
       href="https://cdn.jsdelivr.net/gh/ungveloper/web-fonts/GmarketSans/font-face.css"
     />
     <link
       rel="stylesheet"
-      as="style"
       crossorigin
       href="https://cdn.jsdelivr.net/gh/ungveloper/web-fonts/GmarketSans/font-family.css"
     />
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
-    <h1 class="mt-10 sm:mt-[120px] w-screen">
-      <img
-        class="m-auto w-[calc(100vw-82px)] sm:max-w-[564px]"
-        src="./images/Frame.png"
-        alt="1만 시간의 법칙"
-      />
-    </h1>
+    <h1 class="sr-only">1만 시간의 법칙</h1>
+
+    <img
+      class="m-auto w-[calc(100vw-82px)] mt-10 sm:mt-[120px] sm:max-w-[564px]"
+      src="./images/Frame.svg"
+      alt="1만 시간의 법칙"
+    />
 
     <q
-      class="block mt-8 text-center font-['OTEnjoystoriesBA'] text-[#f5df4d] px-[32px] sm:px-0 text-[min(22px)] sm:text-[36px]"
+      class="mt-8 block px-[32px] text-center font-['OTEnjoystoriesBA'] text-[min(22px)] text-[#f5df4d] sm:px-0 sm:text-[36px]"
     >
       “연습은 어제의 당신보다 당신을 더 낫게 만든다.”
     </q>
 
     <div
-      class="mt-[80px] flex items-center m-auto w-[calc(100vw-30px)] sm:w-[485px]"
+      class="mx-auto mt-[80px] flex w-[calc(100vw-30px)] items-center sm:w-[485px]"
     >
       <img
         class="w-5 sm:w-9"
@@ -90,9 +55,9 @@
         alt="doubleQuote"
       />
       <blockquote
-        class="w-[90%] font-['GmarketSans'] font-[500] text-center text-[14px] sm:text-[18px]"
+        class="w-[90%] text-center font-['GmarketSans'] text-[14px] font-[500] sm:text-[18px]"
       >
-        <dfn class="font-bold text-[14px] sm:text-[24px]">1만 시간의 법칙</dfn
+        <dfn class="text-[14px] font-bold sm:text-[24px]">1만 시간의 법칙</dfn
         >은 <br />
         어떤 분야의 전문가가 되기 위해서는 <br />
         최소한 1만 시간의 훈련이 필요하다는 법칙이다.
@@ -104,13 +69,13 @@
       />
     </div>
 
-    <section
-      class="mt-[80px] sm:mt-[100px] mx-auto w-[calc(100vw-40px)] font-['GmarketSans'] font-[500] leading-[250%] text-center text-[14px] sm:text-[24px]"
+    <div
+      class="mx-auto mt-[80px] w-[calc(100vw-40px)] text-center font-['GmarketSans'] text-[14px] font-[500] leading-[250%] sm:mt-[100px] sm:text-[24px]"
     >
       <p>
         나는
         <input
-          class="w-[156px] sm:w-[228px] px-[40px] rounded-[8px] gap-[10px] text-center text-[14px] sm:text-[24px]"
+          class="w-[156px] rounded-[8px] px-[40px] text-center text-[14px] sm:w-[228px] sm:text-[24px]"
           type="text"
           placeholder="예&#41;프로그래밍"
         />
@@ -119,84 +84,82 @@
       <p>그래서 앞으로 매일 하루에</p>
       <p>
         <input
-          class="w-[156px] sm:w-[228px] px-[40px] rounded-[8px] gap-[10px] text-center text-[14px] sm:text-[24px]"
+          class="w-[156px] rounded-[8px] px-[40px] text-center text-[14px] sm:w-[228px] sm:text-[24px]"
           type="text"
           placeholder="예&#41;5시간"
         />
         시간씩 훈련할 것이다.
       </p>
-    </section>
-    <section class="mt-[80px] flex justify-center">
+    </div>
+    <div class="mt-[80px] flex justify-center">
       <button
-        class="relative w-[240px] sm:w-[567px] px-[50px] py-[20px] rounded-[12px] bg-[#fcee21] text-[#5b2386] text-center text-[14px] sm:text-[24px] leading-[120%] font-['GmarketSans'] font-[700] shadow-[2px_4px_10px_rgba(0,0,0,0.15)]"
+        class="relative w-[240px] rounded-[12px] bg-[#fcee21] px-[50px] py-[20px] text-center font-['GmarketSans'] text-[14px] font-[700] leading-[120%] text-[#5b2386] shadow-[2px_4px_10px_rgba(0,0,0,0.15)] sm:w-[567px] sm:text-[24px]"
       >
         나는 며칠 동안 훈련을 해야 1만 시간이 될까?
         <img
-          class="absolute w-[43px] sm:w-[64px] top-[40px] sm:top-[14px] left-[244px] sm:left-[571px]"
+          class="absolute left-[244px] top-[40px] w-[43px] sm:left-[571px] sm:top-[14px] sm:w-[64px]"
           src="./images/icon.png"
           alt="손가락아이콘"
         />
       </button>
-    </section>
-    <section
-      class="mt-[68px] sm:mt-[182px] text-[12px] flex flex-col items-center"
-    >
+    </div>
+    <div class="mt-[68px] flex flex-col items-center text-[12px] sm:mt-[182px]">
       <div
-        class="flex items-center justify-center gap-[12px] w-[286px] sm:w-[663px] sm:text-[24px] font-['GmarketSans'] font-[500]"
+        class="flex w-[286px] items-center justify-center gap-[12px] font-['GmarketSans'] font-[500] sm:w-[663px] sm:text-[24px]"
       >
         <p>당신은</p>
         <strong class="text-[24px] sm:text-[72px]">프로그래밍</strong>
         <p>전문가가 되기 위해서</p>
       </div>
       <div
-        class="flex items-center justify-center gap-[12px] w-[286px] sm:w-[663px] sm:text-[24px] font-['GmarketSans'] font-[500]"
+        class="flex w-[286px] items-center justify-center gap-[12px] font-['GmarketSans'] font-[500] sm:w-[663px] sm:text-[24px]"
       >
         <p>대략</p>
         <strong class="text-[24px] sm:text-[72px]">5110</strong>
         <p>일 이상 훈련하셔야 합니다! :&#41;</p>
       </div>
-    </section>
-    <section class="mt-[52px] flex justify-center gap-[8px] sm:gap-[10px]">
+    </div>
+    <div class="mt-[52px] flex justify-center gap-[8px] sm:gap-[10px]">
       <button
-        class="rounded-[12px] px-[24px] sm:px-[50px] py-[16px] sm:py-[20px] bg-[#fcee21] text-[#5b2386] text-[14px] sm:text-[24px] font-[GmarketSans] font-bold shadow-[2px_4px_10px_rgba(0,0,0,0.15)]"
+        class="rounded-[12px] bg-[#fcee21] px-[24px] py-[16px] font-[GmarketSans] text-[14px] font-bold text-[#5b2386] shadow-[2px_4px_10px_rgba(0,0,0,0.15)] sm:px-[50px] sm:py-[20px] sm:text-[24px]"
       >
         훈련하러 가기 GO! GO!
       </button>
       <button
-        class="rounded-[12px] px-[24px] sm:px-[50px] py-[16px] sm:py-[20px] bg-white text-[#5b2386] text-[14px] sm:text-[24px] font-[GmarketSans] font-bold shadow-[2px_4px_10px_rgba(0,0,0,0.15)]"
+        class="rounded-[12px] bg-white px-[24px] py-[16px] font-[GmarketSans] text-[14px] font-bold text-[#5b2386] shadow-[2px_4px_10px_rgba(0,0,0,0.15)] sm:px-[50px] sm:py-[20px] sm:text-[24px]"
       >
         공유하기
       </button>
-    </section>
+    </div>
     <div
-      class="hidden w-[330px] sm:w-[800px] h-[500px] sm:h-[816px] px-[42px] sm:px-[146px] py-[40px] sm:py-[80px] rounded-[20px] bg-white text-center"
+      class="hidden h-[500px] w-[330px] rounded-[20px] bg-white px-[42px] py-[40px] text-center sm:h-[816px] sm:w-[800px] sm:px-[146px] sm:py-[80px]"
     >
       <strong
-        class="text-[#5b2386] text-[64px] sm:text-[96px] font-[OTEnjoystoriesBA] leading-none"
+        class="font-[OTEnjoystoriesBA] text-[64px] leading-none text-[#5b2386] sm:text-[96px]"
         >화이팅!!</strong
       >
       <p
-        class="text-[#5b2386] text-[36px] sm:text-[36px] font-[OTEnjoystoriesBA] leading-none"
+        class="font-[OTEnjoystoriesBA] text-[36px] leading-none text-[#5b2386] sm:text-[36px]"
       >
         당신의 꿈을 응원합니다!
       </p>
       <img
-        class="mt-[24px] sm:mt-[40px] w-[240px] sm:w-[483px]"
+        class="mt-[24px] w-[240px] sm:mt-[40px] sm:w-[483px]"
         src="./images/licat.png"
         alt="라이캣"
       />
       <button
-        class="mt-[24px] sm:mt-[60px] w-full px-[50px] py-[20px] rounded-[12px] bg-[#fcee21] text-[#5b2386] text-center text-[14px] sm:text-[24px] font-[GmarketSans] font-bold leading-none"
+        class="mt-[24px] w-full rounded-[12px] bg-[#fcee21] px-[50px] py-[20px] text-center font-[GmarketSans] text-[14px] font-bold leading-none text-[#5b2386] sm:mt-[60px] sm:text-[24px]"
       >
         종료하고 진짜 훈련하러 가기 GO!GO!
       </button>
     </div>
-    <footer class="flex flex-col justify-center items-center text-center">
+    <footer class="flex flex-col items-center justify-center text-center">
       <cite
-        class="mt-[60px] mb-[48px] sm:mb-[128px] sm:mt-[120px] text-[9px] sm:text-[12px] font-[NotoSans]"
+        class="mb-[48px] mt-[60px] font-[NotoSans] text-[9px] sm:mb-[128px] sm:mt-[120px] sm:text-[12px]"
       >
         <img
-          class="box w-[125px] sm:w-[168px] mx-auto mb-[12px] sm:mb-[20px]"
+          class="box mx-auto mb-[12px] w-[125px] sm:mb-[20px] sm:w-[168px]"
           src="./images/logo-m.png"
           alt="위니브로고"
         />
