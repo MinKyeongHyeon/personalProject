@@ -2,6 +2,10 @@
 
 ✅이 프로젝트는 1만 시간의 법칙 계산기를 웹으로 구현한 것입니다. 시간을 직접 계산해보고, 동기부여를 얻을 수 있도록 하고자 하였습니다.
 
+- 구조적으로 시멘틱한 코드를 사용하여 사용자 접근성을 높였습니다.
+- tailwindCSS를 적극 사용하여 개발하였습니다.
+- 반응형 웹을 고려하여 제작하였습니다.
+
 ## 📖 목차
 
 - 사용법
@@ -28,6 +32,13 @@ posonalProject/
 └── readme.md         # 프로젝트 문서
 ```
 
+## 스크린샷
+
+데스크톱 버전
+![데스크톱버전](desktopScreenShot.png)
+모바일 버전
+![모바일버전](mobileScreenshot-1.png)
+
 ## 문의
 
 프로젝트에 대한 질문이나 제안사항이 있으시면 Issue를 생성해 주세요.
@@ -35,8 +46,4 @@ posonalProject/
 
 - manemin2@gmail.com
 
-## 블로그 구경하기
-
-<https://velog.io/@tedmin93/posts>
-
-Last Update: 25.06.17 - 첫 readme.md 작성.
+Last Update: 25.06.23 코드정리 및 스크린샷 첨부.
