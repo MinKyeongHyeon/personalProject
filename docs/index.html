@@ -52,11 +52,7 @@
       <section
         class="mx-auto mt-[80px] flex w-[calc(100vw-30px)] items-center sm:w-[485px]"
       >
-        <img
-          class="w-5 sm:w-9"
-          src="./images/leftDoubleQuote.svg"
-          alt="doubleQuote"
-        />
+        <img class="w-5 sm:w-9" src="./images/leftDoubleQuote.svg" alt="" />
         <blockquote
           class="w-[90%] text-center font-['GmarketSans'] text-[14px] font-[500] sm:text-[18px]"
         >
@@ -65,47 +61,46 @@
           어떤 분야의 전문가가 되기 위해서는 <br />
           최소한 1만 시간의 훈련이 필요하다는 법칙이다.
         </blockquote>
-        <img
-          class="w-5 sm:w-9"
-          src="./images/rightDoubleQoute.svg"
-          alt="doubleQoute"
-        />
+        <img class="w-5 sm:w-9" src="./images/rightDoubleQoute.svg" alt="" />
       </section>
 
       <section
         class="mx-auto mt-[80px] w-[calc(100vw-40px)] text-center font-['GmarketSans'] text-[14px] font-[500] leading-[250%] sm:mt-[100px] sm:text-[24px]"
       >
-        <p>
-          나는
-          <input
-            class="w-[156px] rounded-[8px] px-[40px] text-center text-[14px] sm:w-[228px] sm:text-[24px]"
-            type="text"
-            placeholder="예&#41;프로그래밍"
-          />
-          전문가가 될 것이다.
-        </p>
-        <p>그래서 앞으로 매일 하루에</p>
-        <p>
-          <input
-            class="w-[156px] rounded-[8px] px-[40px] text-center text-[14px] sm:w-[228px] sm:text-[24px]"
-            type="text"
-            placeholder="예&#41;5시간"
-          />
-          시간씩 훈련할 것이다.
-        </p>
-      </section>
-
-      <section class="mt-[80px] flex justify-center">
-        <button
-          class="relative w-[240px] rounded-[12px] bg-[#fcee21] px-[50px] py-[20px] text-center font-['GmarketSans'] text-[14px] font-[700] leading-[120%] text-[#5b2386] shadow-[2px_4px_10px_rgba(0,0,0,0.15)] sm:w-[567px] sm:text-[24px]"
-        >
-          나는 며칠 동안 훈련을 해야 1만 시간이 될까?
-          <img
-            class="absolute left-[244px] top-[40px] w-[43px] sm:left-[571px] sm:top-[14px] sm:w-[64px]"
-            src="./images/icon.png"
-            alt="손가락아이콘"
-          />
-        </button>
+        <form>
+          <p>
+            나는
+            <label for="iWill" class="sr-only">공부하고싶은 분야</label>
+            <input
+              id="iWill"
+              class="w-[156px] rounded-[8px] px-[40px] text-center text-[14px] sm:w-[228px] sm:text-[24px]"
+              type="text"
+              placeholder="예&#41;프로그래밍"
+            />
+            전문가가 될 것이다.
+          </p>
+          <p>그래서 앞으로 매일 하루에</p>
+          <p>
+            <label for="trainingTime" class="sr-only">앞으로 투자할 시간</label>
+            <input
+              id="trainingTime"
+              class="w-[156px] rounded-[8px] px-[40px] text-center text-[14px] sm:w-[228px] sm:text-[24px]"
+              type="text"
+              placeholder="예&#41;5시간"
+            />
+            시간씩 훈련할 것이다.
+          </p>
+          <button
+            class="relative mt-[80px] w-[240px] rounded-[12px] bg-[#fcee21] px-[50px] py-[20px] text-center font-['GmarketSans'] text-[14px] font-[700] text-[#5b2386] shadow-[2px_4px_10px_rgba(0,0,0,0.15)] sm:w-[567px] sm:text-[24px]"
+          >
+            나는 며칠 동안 훈련을 해야 1만 시간이 될까?
+            <img
+              class="absolute left-[244px] top-[40px] w-[43px] sm:left-[571px] sm:top-[14px] sm:w-[64px]"
+              src="./images/icon.png"
+              alt="손가락아이콘"
+            />
+          </button>
+        </form>
       </section>
 
       <section
